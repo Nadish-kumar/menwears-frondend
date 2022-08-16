@@ -1,0 +1,239 @@
+*{
+    margin: 0px ;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.bg__img{
+    background-image: url(./images/walpaper.jpeg);
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    align-content: center;
+    padding: 30px 80px;
+   }
+
+   .logo img{
+    width: 150px;
+    display: flex;
+    align-self: center;
+   }
+ 
+.link a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: 'Fredoka One', cursive;
+    margin-right: 30px;
+   }
+
+   .content{
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+   .content img {
+    width: 300px;
+  
+   }
+
+   .content__message{
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    font-size: 25px;
+    text-align: center;
+    line-height: 2;
+    letter-spacing:2px;
+   }
+
+   .btn{
+    border: none;
+    background-color: #F59ABB;
+    font-size: 18px;
+    color: white;
+    border-radius: 18px;
+    padding: 10px 25px;
+    margin-top: 10px;
+   
+  
+   }
+
+   .cards{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.heading {
+    font-family: 'Fredoka One', cursive;
+    font-weight: 600;
+    font-size: 30px;
+    word-spacing: 10px;
+    border-bottom: 3px solid #F59ABB;
+    text-align: center;
+}
+
+   .cone img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    }
+
+   .cone {
+    font-size: 20px;
+    text-align: center;
+   }
+
+   .box{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+   }
+
+   .About {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .About img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  .About_content {
+    background-color: #c16a9c;
+    height: 100%;
+    position: relative;
+  }
+  .About_content_text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 20px;
+    height: 100%;
+    color: #fafafa;
+  }
+  .About_content_head {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .About_para {
+    text-align: justify;
+    line-height: 1.6;
+    word-spacing: 5px;
+  }
+  .About_content button {
+    background-color: #c9a082;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 60px;
+  }
+
+  .gallery {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  .gallery h1 {
+    border-bottom: 4px solid pink;
+    font-family: "Fredoka One", cursive;
+    padding-bottom: 10px;
+  }
+  .gallery_img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+  }
+  .gallery_img img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+  }
+  .imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgs p {
+    text-transform: uppercase;
+    font-family: "Fredoka One", cursive;
+  }
+  .gallery_img img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  /* Footer */
+  .Footer {
+    margin: 20px 0 0 0;
+    width: 100vw;
+    height: 120px;
+    background-color: #fbd3e7;
+  }
+  .Footer_content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Icons i {
+    margin-top: 20px !important;
+  
+    margin-right: 20px;
+  }
+  .Footer_content p {
+    font-family: "Fredoka One", cursive;
+    margin-top: 20px;
+    letter-spacing: 6px;
+  }
+  
+
+   /* @media only screen and (max-width: 500px) {
+    .navbar {
+      display: none;
+    }
+    .box{
+        flex-direction: column;
+    }
+    .About {
+        grid-template-columns: 1fr;
+      }
+      .About_content {
+        padding: 20px;
+      }
+      .About_content_head h1 {
+        font-size: 20px;
+      }
+
+  } */
+  @media only screen and (max-width: 600px) {
+   .navbar{
+    display: none;
+   }
+   .box{
+    flex-direction: column ;
+   }
+   .About{
+    grid-template-columns: 1fr;
+   }
+   .About_para{
+    padding: 5px 10px;
+   }
+   .About_content_head{
+    padding: 10px 2px;
+   }
+  }
